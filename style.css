@@ -231,6 +231,7 @@ table {
   cursor: pointer;
   background-color: #3498db;
   transition: ease-in 0.1s;
+  cursor: pointer;
 }
 
 .blur {
@@ -242,6 +243,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .edit-form {
