@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce3e3; /* Cor de fundo rosa claro */
+    overflow: hidden; /* Para esconder os corações que aparecem fora da área visível */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3333;
+}
+
+.resposta {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* CSS para os corações */
+@keyframes moveHeart {
+    0% {
+        transform: translateY(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg) scale(1.5);
+        opacity: 0;
+    }
+}
+
+#hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.coracao {
+    position: absolute;
+    animation: moveHeart 5s infinite alternate linear; /* Animação de movimento */
+}
+
+.coracao svg {
+    width: 100%;
+    height: 100%;
+    fill: #fd79ca;
+}
