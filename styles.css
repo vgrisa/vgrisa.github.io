@@ -66,3 +66,21 @@ button:hover {
     height: 100%;
     fill: #fd79ca;
 }
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon {
+    color: #ff4d4d;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #ff3333;
+}
