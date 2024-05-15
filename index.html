@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convite para um Encontro</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome para ícones -->
 </head>
 <body>
     <div class="container">
         <h1>Convite para um Encontro Maravilhoso</h1>
-        <p>Oiiiii Pretendente!</p>
-        <p>Gostaria de te levar para um encontro no Deep Four Black! Aceitas?</p>
+        <p>Olá pretendente!</p>
+        <p>Me chamo Vinicius Grisa e estou em busca de um amor verdadeiro</p>
+        <p>Abaixo segue o link para meu instagram e formulário</p>
+        <div class="icons-container">
+            <div class="icons">
+                <a href="https://www.instagram.com/vini_grisa" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://forms.gle/SeBJvsZeDfunivpa9" target="_blank" class="icon"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+        <p>E agora, a pergunta que nao quer calar</p>
+        <p>Se eu te chamasse para um date, você aceitaria?</p>
         <button onclick="enviarConvite()">OBVIO!</button>
         <p class="resposta" id="resposta"></p>
         <button id="nao" onmouseover="moverBotao()">Não, seu esquisito</button>
     </div>
 
     <div id="hearts"></div>
+
 
     <script src="script.js"></script>
 </body>
