@@ -10,8 +10,8 @@ function moverBotao() {
     const maxX = containerRect.width;
     const maxY = containerRect.height;
 
-    const newX = Math.floor(Math.random() * maxX * 1.5);
-    const newY = Math.floor(Math.random() * maxY * 1.5);
+    const newX = Math.floor(Math.random() * maxX);
+    const newY = Math.floor(Math.random() * maxY);
 
     button.style.position = 'absolute';
     button.style.left = newX + 'px';
